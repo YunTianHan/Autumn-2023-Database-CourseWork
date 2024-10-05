@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT eCorporation (Country*)>
+<!ELEMENT Country (Organization*)>
+<!ATTLIST Country   
+	name	CDATA	#REQUIRED
+>
+<!ELEMENT Organization (Name, Website, Description, Founded, Industry, NumberEmployees, Employees*)>
+<!ATTLIST Organization   
+	OrganizationID	CDATA	#REQUIRED
+>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Website (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+<!ELEMENT Founded (#PCDATA)>
+<!ELEMENT Industry (#PCDATA)>
+<!ELEMENT NumberEmployees (#PCDATA)>
+<!ELEMENT Employees (FirstName, LastName, Sex, Email, Phone, BirthDate, JobTitle)>
+<!ATTLIST Employees   
+	UserID	CDATA	#REQUIRED
+>
+<!ELEMENT FirstName (#PCDATA)>
+<!ELEMENT LastName (#PCDATA)>
+<!ELEMENT Sex (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Phone (#PCDATA)>
+<!ELEMENT BirthDate (#PCDATA)>
+<!ELEMENT JobTitle (#PCDATA)>

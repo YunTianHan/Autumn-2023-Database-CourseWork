@@ -1,0 +1,22 @@
+<!ELEMENT Organizations (Organization*)>
+<!ELEMENT Organization (OrganizationID, Name, Website, Country, Description, Founded, Industry, NumberEmployees, Employees)>
+<!ELEMENT OrganizationID (#PCDATA)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Website (#PCDATA)>
+<!ELEMENT Country (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+<!ELEMENT Founded (#PCDATA)>
+<!ELEMENT Industry (#PCDATA)>
+<!ELEMENT NumberEmployees (#PCDATA)>
+<!ELEMENT Employees (Employee*)>
+<!ELEMENT Employee (FirstName, LastName, Sex, Email, Phone, BirthDate, JobTitle)>
+<!ATTLIST Employee   
+	UserID	CDATA	#REQUIRED
+>
+<!ELEMENT FirstName (#PCDATA)>
+<!ELEMENT LastName (#PCDATA)>
+<!ELEMENT Sex (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Phone (#PCDATA)>
+<!ELEMENT BirthDate (#PCDATA)>
+<!ELEMENT JobTitle (#PCDATA)>
